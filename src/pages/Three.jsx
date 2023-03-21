@@ -16,6 +16,18 @@ function Controls() {
   return <orbitControls ref={ref} args={[camera, gl.domElement]} />;
 }
 
+function Light(){
+  const { scene } = useThree()
+  useEffect(() => {
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(5, 2, 1).normalize();
+    light.intensity = 10;
+    scene.add(light);
+  }, [])
+
+  return <ambientLight color={0xffffff} intensity={10}/>
+}
+
 function Three() {
   const [objects, setObjects] = useState([]);
   const [geometryType, setGeometryType] = useState('cube');
@@ -64,11 +76,7 @@ function Three() {
         <button disabled={false} onClick={handleCreateClick}>Create</button>
       </div>
       <Canvas style={{ widht: '100%', height: '100vh' }}>
-        <rectAreaLight
-          rotation={[0, -0.5, 0]}
-          position={[-2, 0, 2]}
-          args={["purple", 20, 1, 10]}
-        />
+        <Light/>
         {objects.map(({ uuid, geometry, material, position }) => (
           <Object key={uuid} scale={scale} geometry={geometry} material={material} position={position} />
         ))}
