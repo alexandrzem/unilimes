@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/unilimes/static/css/main.0d7c9013.css",
-    "main.js": "/unilimes/static/js/main.a01fad95.js",
+    "main.js": "/unilimes/static/js/main.b9820235.js",
     "static/js/787.e3988a7e.chunk.js": "/unilimes/static/js/787.e3988a7e.chunk.js",
     "index.html": "/unilimes/index.html",
     "main.0d7c9013.css.map": "/unilimes/static/css/main.0d7c9013.css.map",
-    "main.a01fad95.js.map": "/unilimes/static/js/main.a01fad95.js.map",
+    "main.b9820235.js.map": "/unilimes/static/js/main.b9820235.js.map",
     "787.e3988a7e.chunk.js.map": "/unilimes/static/js/787.e3988a7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d7c9013.css",
-    "static/js/main.a01fad95.js"
+    "static/js/main.b9820235.js"
   ]
 }
